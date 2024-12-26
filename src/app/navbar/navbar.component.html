@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="Logo">
+    </div>
+    <ul class="nav-links" [class.show]="isMenuOpen">
+      <li><a class="anton-regular" routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a class="anton-regular" routerLink="/services" routerLinkActive="active">Build With Us</a></li>
+      <li><a class="anton-regular" routerLink="/portfolio" routerLinkActive="active">Showcase</a></li>
+      <li><a class="anton-regular" routerLink="/about" routerLinkActive="active">About Us</a></li>
+      <li><a class="anton-regular" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+    <button class="contact-button">Contact Us</button>
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  
