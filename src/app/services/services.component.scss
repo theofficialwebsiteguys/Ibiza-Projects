@@ -1,0 +1,69 @@
+.services-banner {
+    background-color: #f8f9fa; /* Light background for subtle contrast */
+    padding: 2rem 2rem;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+  
+    .services-content {
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      .banner-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+  
+      .banner-description {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 2rem;
+      }
+  
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+  
+      .service-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px; /* Rounded edges for a modern design */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        }
+  
+        .service-image {
+          width: 100%;
+          height: 180px; /* Fixed height for uniformity */
+          object-fit: cover;
+          border-radius: 8px;
+        }
+  
+        .service-info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+          color: white;
+          text-align: center;
+          padding: 0.5rem 0;
+          border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+  
+          h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  button {
+    padding: 0.8rem 2rem; /* Slightly larger padding for a bold appearance */
+    background-color: #FF5722; /* Solid Burnt Orange */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 30px; /* Rounded edges for a modern look */
+    font-size: 1.2rem; /* Slightly larger font for emphasis */
+    font-weight: 600; /* Bold text */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth interactions */
+  
+    &:hover {
+      transform: translateY(-2px); /* Lift the button slightly */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    }
+  
+    &:active {
+      transform: translateY(1px); /* Subtle press-down effect */
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+    }
+  }
+  
+  .button-outline {
+    background-color: transparent;
+    border: 2px solid #FF5722;
+    color: #FF5722;
+    &:hover {
+      background-color: #FF5722;
+    }
+  }
+  

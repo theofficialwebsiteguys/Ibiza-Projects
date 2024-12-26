@@ -1,0 +1,111 @@
+.navbar {
+    position: fixed; /* Makes the navbar stay at the top of the screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures the navbar is above the hero */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8); /* Transparent background for a modern look */
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  
+    .logo img {
+      width: 100px;
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+  
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.2rem;
+          transition: color 0.3s ease, transform 0.2s ease;
+          cursor: pointer;
+  
+          &:hover {
+            color: #FF5722;
+            transform: scale(1.1);
+          }
+  
+          &.active {
+            color: #FF5722;
+            font-weight: bold;
+            border-bottom: 2px solid #FF5722;
+          }
+        }
+      }
+    }
+  
+    .contact-button {
+      display: block; /* Default is visible */
+    }
+  
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+  
+      span {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .contact-button {
+        display: none; /* Hide the button on mobile devices */
+      }
+  
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        transform: translateY(-200%);
+        opacity: 0;
+        visibility: hidden;
+  
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+  
+      .nav-links.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      .hamburger {
+        display: flex;
+  
+        &.active span:nth-child(1) {
+          transform: rotate(45deg) translateY(8px);
+        }
+  
+        &.active span:nth-child(2) {
+          opacity: 0;
+        }
+  
+        &.active span:nth-child(3) {
+          transform: rotate(-45deg) translateY(-8px);
+        }
+      }
+    }
+  }
+  
