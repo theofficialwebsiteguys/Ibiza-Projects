@@ -1,7 +1,7 @@
 <section 
   class="hero" 
   [ngClass]="{'home-hero': isHomePage, 'subpage-hero': !isHomePage}" 
-  [ngStyle]="{'background-image': isHomePage ? 'url(../../assets/Gazebo/gazebo-full.jpg)' : 'url(' + subpageImage + ')'}">
+  [ngStyle]="{'background-image': isHomePage ? 'url(assets/Gazebo/gazebo-full.jpg)' : 'url(' + subpageImage + ')'}">
   <div class="hero-content">
     <h1 *ngIf="isHomePage">Your Vision, Our Project</h1>
     <h1 *ngIf="!isHomePage">{{ subpageTitle }}</h1>
