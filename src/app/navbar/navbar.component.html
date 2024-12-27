@@ -1,15 +1,16 @@
 <nav class="navbar">
     <div class="logo">
-      <img src="assets/logo.jpg" alt="Logo">
+      <a routerLink="/">
+        <img src="assets/logo.jpg" alt="Logo">
+      </a>
     </div>
     <ul class="nav-links" [class.show]="isMenuOpen">
-      <li><a class="anton-regular" routerLink="/" routerLinkActive="active">Home</a></li>
-      <li><a class="anton-regular" routerLink="/services" routerLinkActive="active">Build With Us</a></li>
-      <li><a class="anton-regular" routerLink="/portfolio" routerLinkActive="active">Showcase</a></li>
+      <li><a class="anton-regular" [routerLinkActiveOptions]="{ exact: true }" routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a class="anton-regular" routerLink="/build" routerLinkActive="active">Build With Us</a></li>
       <li><a class="anton-regular" routerLink="/about" routerLinkActive="active">About Us</a></li>
-      <li><a class="anton-regular" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <!-- <li><a class="anton-regular" routerLink="/contact" routerLinkActive="active">Book A Consultation</a></li> -->
     </ul>
-    <button class="contact-button">Contact Us</button>
+    <button class="contact-button">Book A Consultation</button>
     <div class="hamburger" (click)="toggleMenu()">
       <span></span>
       <span></span>

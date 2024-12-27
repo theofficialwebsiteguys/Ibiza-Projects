@@ -1,0 +1,60 @@
+<app-hero 
+  [isHomePage]="false" 
+  [subpageTitle]="'Book A Consultation'" 
+  [subpageImage]="'assets/Deck/IMG_3888.jpg'">
+</app-hero>
+<div class="contact-section">
+  <div class="contact-content">
+    <div class="business-info">
+      <h2>Let’s Build Together</h2>
+      <p>We’re here to help make your construction project a reality. From custom homes to commercial builds, we bring decades of expertise to every project.</p>
+      <ul>
+        <li><strong>Phone:</strong> (123) 456-7890</li>
+        <li><strong>Email:</strong> contact&#64;constructionco.com</li>
+        <li><strong>Address:</strong> 123 Main Street, Cityville, USA</li>
+      </ul>
+      <p>Whether you’re ready to start building or just exploring your options, we’d love to hear from you.</p>
+    </div>
+    <div class="contact-form">
+      <h3>Fill out the Form Below</h3>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Your Name *"
+            name="name"
+            [(ngModel)]="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            placeholder="Your Email *"
+            name="email"
+            [(ngModel)]="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="tel"
+            placeholder="Phone Number *"
+            name="phone"
+            [(ngModel)]="phone"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            placeholder="Tell us about your project *"
+            name="comment"
+            [(ngModel)]="comment"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Book A Consultation</button>
+      </form>
+    </div>
+  </div>
+</div>

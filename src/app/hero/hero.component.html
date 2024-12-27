@@ -1,10 +1,14 @@
-<section class="hero">
+<section 
+  class="hero" 
+  [ngClass]="{'home-hero': isHomePage, 'subpage-hero': !isHomePage}" 
+  [ngStyle]="{'background-image': isHomePage ? 'url(../../assets/Gazebo/gazebo-full.jpg)' : 'url(' + subpageImage + ')'}">
   <div class="hero-content">
-    <h1>Building Your Dream Spaces</h1>
-    <p>Professional construction services to bring your vision to life.</p>
-    <div class="hero-buttons">
-      <button class="btn-primary">Get a Quote</button>
-      <button class="btn-secondary button-outline">Our Projects</button>
+    <h1 *ngIf="isHomePage">Your Vision, Our Project</h1>
+    <h1 *ngIf="!isHomePage">{{ subpageTitle }}</h1>
+    <p *ngIf="isHomePage">Professional construction services to bring your vision to life.</p>
+    <div *ngIf="isHomePage" class="hero-buttons">
+      <button class="btn-primary" routerLink="/contact">Book A Consultation</button>
+      <button class="btn-secondary button-outline" routerLink="/build">Our Projects</button>
     </div>
   </div>
 </section>

@@ -31,14 +31,14 @@
           cursor: pointer;
   
           &:hover {
-            color: #FF5722;
+            color: #0074D9;
             transform: scale(1.1);
           }
   
           &.active {
-            color: #FF5722;
+            color: #0074D9;
             font-weight: bold;
-            border-bottom: 2px solid #FF5722;
+            border-bottom: 2px solid #0074D9;
           }
         }
       }

@@ -1,0 +1,111 @@
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light grey background */
+    color: #333; /* Neutral text color */
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .business-info {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .business-info h2 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #01004c; /* Navy text */
+    margin-bottom: 15px;
+  }
+  
+  .business-info p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .business-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .business-info ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-form h3 {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #01004c; /* Navy text */
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #0074D9; /* Blue focus */
+    box-shadow: 0 4px 8px rgba(0, 116, 217, 0.2);
+    outline: none;
+  }
+  
+  .form-group textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+    }
+  
+    .business-info,
+    .contact-form {
+      flex: 1 1 100%;
+    }
+  
+    button {
+      font-size: 1.1rem;
+    }
+  }
+  

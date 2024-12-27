@@ -3,6 +3,9 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; /* Modern default font */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Neutral text color */
 }
 
 h1{
@@ -20,7 +23,7 @@ h1{
 
   button {
     padding: 0.8rem 2rem; /* Slightly larger padding for a bold appearance */
-    background-color: #FF5722; /* Solid Burnt Orange */
+    background-color: #0074D9; /* Solid Burnt Orange */
     color: white; /* Text color */
     border: none;
     border-radius: 30px; /* Rounded edges for a modern look */
@@ -43,10 +46,10 @@ h1{
   
   .button-outline {
     background-color: transparent;
-    border: 2px solid #FF5722;
-    color: #FF5722;
+    border: 2px solid #0074D9;
+    color: #0074D9;
     &:hover {
-      background-color: #FF5722;
+      background-color: #0074D9;
     }
   }
   
