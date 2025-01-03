@@ -13,7 +13,7 @@
     transition: all 0.3s ease;
   
     .logo img {
-      width: 100px;
+      width: 150px;
     }
   
     .nav-links {
@@ -106,6 +106,32 @@
           transform: rotate(-45deg) translateY(-8px);
         }
       }
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #555;
+  }
+
+  .phone-icon {
+    font-size: 18px; /* Match icon size */
+    text-decoration: none;
+
+    .fa-phone-alt{
+      margin-right: 5px;
     }
   }
   

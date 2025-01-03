@@ -27,12 +27,13 @@
     flex: 1;
     min-width: 300px;
     text-align: left;
+    margin: auto;
+    font-size: 22px;
   }
   
   .about-content .about-images {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
   
@@ -48,11 +49,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
-  
-  .about-images img:hover {
-    transform: scale(1.05);
-  }
-  
+
   @media (max-width: 768px) {
     .about-content {
       flex-direction: column;
@@ -89,3 +86,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
   }
   
+  img-comparison-slider {
+    outline: none; /* Removes the default focus outline */
+  }
