@@ -173,3 +173,21 @@
     flex-direction: column;
   }
 }
+
+.footer-email {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+
+  a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #007bff;
+  }
+}

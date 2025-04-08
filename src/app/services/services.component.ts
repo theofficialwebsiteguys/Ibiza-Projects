@@ -11,11 +11,11 @@ import { RouterModule } from '@angular/router';
 })
 export class ServicesComponent {
   services = [
-    { title: 'Decks', image: 'assets/Deck/deck-display.jpg' },
+    { title: 'Decks', image: 'assets/deck-service.png' },
     { title: 'Gazebos', image: 'assets/Gazebo/gazebo-full.jpg' },
-    { title: 'Additions', image: 'assets/Additions/addition-display.jpg' },
-    { title: 'Painting', image: 'assets/Gilchrest/master-bedroom.jpg' },
-    { title: 'Interior', image: 'assets/Gilchrest/kitchen-4.jpg' },
+    { title: 'Additions', image: 'assets/addition-service.png' },
+    { title: 'Painting', image: 'assets/painting-service.png' },
+    { title: 'Interior', image: 'assets/interior-service.png' },
     { title: 'Sheds', image: 'assets/Shed/IMG_1460.jpg' },
 
   ];

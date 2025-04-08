@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="logo">
     <a routerLink="/">
-      <img src="assets/logo.jpg" alt="Logo">
+      <img src="assets/logo.png" alt="Logo">
     </a>
   </div>
   <ul class="nav-links" [class.show]="isMenuOpen">
@@ -13,7 +13,7 @@
   <div class="social-icons">
     <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/ibiza_projects/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="tel:8451234567" class="phone-icon"><i class="fas fa-phone-alt"></i> 845-123-4567</a>
+    <a href="tel:+18457297666" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
   </div>
 
   <div class="hamburger" (click)="toggleMenu()">
@@ -26,7 +26,7 @@
   <div class="slide-in-menu" [class.show]="isMenuOpen">
     <div class="menu-header">
       <button class="back-button" (click)="toggleMenu()">&#x2190;</button>
-      <img src="assets/logo.jpg" alt="Logo" class="menu-logo">
+      <img src="assets/logo.png" alt="Logo" class="menu-logo">
     </div>
     <ul class="menu-links">
       <li><a (click)="closeMenu()" [routerLinkActiveOptions]="{ exact: true }" routerLink="/" routerLinkActive="active">Home</a></li>
@@ -36,7 +36,7 @@
     <div class="menu-footer">
       <a href="tel:8451234567" class="phone-number"><i class="fas fa-phone-alt"></i> 845-123-4567</a>
       <div class="social-icons">
-        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/share/15VjUgv9hZ/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/ibiza_projects/" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
