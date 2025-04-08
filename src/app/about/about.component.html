@@ -1,4 +1,10 @@
 <div id="about-section">
+  <div class="about-intro">
+    <p>
+      Throughout every phase of construction, we focus on delivering a seamless experience built on transparency, reliability, and expert craftsmanship. Our team works closely with you to ensure timelines are met, expectations are exceeded, and every detail is handled with care. We take pride in what we build, which is why every project is backed by our quality guarantee—so you can feel confident not just during the process, but long after the job is done.
+    </p>
+  </div>
+  
     <div class="container">
       <h1 id="about-heading" class="oswald-font">
         About Our Construction Company
@@ -26,6 +32,17 @@
           <img src="assets/Deck/IMG_3876.jpg" alt="Finished Project" />
         </div>
       </div>
+
+      <div class="certifications">
+        <h2>Our Certifications</h2>
+        <div class="certification-grid">
+          <div class="cert-item" *ngFor="let cert of certifications">
+            <img [src]="cert.image" [alt]="cert.label"/>
+            <p>{{ cert.label }}</p>
+          </div>
+        </div>
+      </div>     
+      
     </div>
   </div>
   
