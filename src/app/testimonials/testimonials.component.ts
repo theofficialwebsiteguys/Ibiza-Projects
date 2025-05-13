@@ -11,23 +11,31 @@ import { Component } from '@angular/core';
 export class TestimonialsComponent {
   users = [
     {
-      name: 'John Smith',
+      name: 'Corey Zbar',
       description:
-        'The team exceeded our expectations! From start to finish, they were professional, reliable, and delivered a stunning result. We couldn’t be happier with our new home addition!',
+        'I hired Kenji in August 2024 to fully renovate two gutted apartments in a building I purchased as an investment property. From start to finish, Kenji handled everything — project management, budgeting, sourcing materials, overseeing inspections — and he did it all with an impressive level of professionalism and care.\n\n' +
+        'The work included flooring, kitchens, bathrooms, structural beams, roof repairs, painting, siding, drywall, gutters, and more. Every part of the job was executed with precision and attention to detail, and the final results were exceptional.\n\n' +
+        'What truly set Kenji apart was his communication. He kept me informed every step of the way, was always available, and tackled any issue that came up with transparency and speed. The project stayed on time and on budget, which, as any investor knows, is no small feat.\n\n' +
+        'I’d confidently recommend Kenji for any renovation or construction project. He’s reliable, skilled, and truly dedicated to delivering top-quality work.',
       image: 'assets/default.jpg',
       rating: 5,
     },
     {
-      name: 'Sarah Johnson',
+      name: 'Dr. Alan Pressman, D.M.D.',
       description:
-        'Outstanding craftsmanship and attention to detail. They kept us informed every step of the way and delivered on time and within budget. Highly recommend!',
+        'In June and July of 2024, I hired Kenji Harper Jr. for two major home improvement projects — a deck renovation and a foundation repair. I couldn’t be more pleased with the results.\n\n' +
+        'Kenji removed and replaced my failing deck boards and rails with composite boards and aluminum railings, reinforcing the existing frame with additional blocking to ensure long-term safety and durability. The craftsmanship was excellent, and the work was completed efficiently and cleanly.\n\n' +
+        'He also repaired a foundation crack that had been leaking water into my basement — a problem another contractor had previously failed to resolve. Kenji fully excavated the area, removed the faulty repair, and properly sealed the crack with concrete and tar. Six months later, there’s still no sign of a leak.\n\n' +
+        'Kenji took the time to understand my goals, executed the work professionally, and left the site clean and on schedule. He’s a true asset in this field, and I highly recommend him.',
       image: 'assets/default.jpg',
       rating: 5,
     },
     {
-      name: 'Michael Brown',
+      name: 'Nayira Padilla-Lago',
       description:
-        'I hired them for a complete kitchen remodel, and the results were beyond what I imagined. The team was courteous, punctual, and their work speaks for itself. Five stars!"',
+        'I was referred to Kenji Harper Jr. by a friend and first hired him in 2023 for a few small home repairs. Since then, Kenji has completed multiple projects in my home, including installing a new staircase and railings, rebuilding and painting my deck stairs, remodeling my shed, and replacing the ceilings and walls in my basement with drywall.\n\n' +
+        'Kenji has consistently impressed me with his professionalism, punctuality, and the high quality of his work.\n\n' +
+        'I’m extremely pleased with the results and look forward to working with him on future projects. I would confidently recommend Kenji to anyone in need of reliable and skilled home improvement services.',
       image: 'assets/default.jpg',
       rating: 5,
     },
